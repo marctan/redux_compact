@@ -10,7 +10,7 @@ abstract class CompactAction<St> {
   late RequestStatus _requestStatus;
 
   /// Setter for the action store
-  void setStore(Store store) => _store = (store as Store<St>);
+  void setStore(Store<St> store) => _store = store;
 
   void setRequestStatus(RequestStatus status) => _requestStatus = status;
 
